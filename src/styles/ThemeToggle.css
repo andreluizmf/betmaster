@@ -1,0 +1,23 @@
+.btn-theme-toggle {
+  background-color: transparent;
+  color: #6b7280;
+  border: 1px solid #374151;
+  border-radius: 3px;
+  padding: 4px 10px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  transition: all 0.12s;
+  white-space: nowrap;
+}
+
+.btn-theme-toggle:hover {
+  background-color: rgba(242,106,27,0.1);
+  color: var(--cor-primaria);
+  border-color: rgba(242,106,27,0.4);
+}
