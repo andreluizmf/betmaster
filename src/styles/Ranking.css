@@ -1,0 +1,127 @@
+.ranking-formula {
+  font-size: 0.8rem;
+  color: var(--cor-texto-suave);
+  padding: 8px 12px;
+  border-left: 3px solid var(--cor-primaria);
+}
+
+/* Pódio */
+.ranking-podio {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.podio-card {
+  background-color: var(--cor-fundo-2);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--border-radius);
+  padding: 16px 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  min-width: 140px;
+  position: relative;
+  transition: transform 0.15s;
+}
+
+.podio-card:hover { transform: translateY(-2px); }
+
+.posicao-1 {
+  border-top: 3px solid #f59e0b;
+  background-color: rgba(245,158,11,0.05);
+  transform: scale(1.04);
+}
+
+.posicao-2 { border-top: 3px solid #94a3b8; }
+.posicao-3 { border-top: 3px solid #b45309; }
+
+.podio-medalha { font-size: 2rem; }
+
+.podio-avatar {
+  width: 44px;
+  height: 44px;
+  background-color: var(--cor-fundo-3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: var(--cor-texto);
+}
+
+.podio-card strong {
+  font-size: 0.85rem;
+  color: var(--cor-texto);
+}
+
+.podio-pontos {
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--cor-primaria);
+}
+
+.podio-info {
+  font-size: 0.7rem;
+  color: var(--cor-texto-suave);
+}
+
+.podio-voce {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: var(--cor-primaria);
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 2px 5px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+/* Tabela */
+.jogador-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mini-avatar {
+  width: 26px;
+  height: 26px;
+  background-color: var(--cor-fundo-3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--cor-texto);
+  flex-shrink: 0;
+}
+
+.badge-voce {
+  background-color: rgba(242,106,27,0.15);
+  color: var(--cor-primaria);
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 1px 5px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.posicao-numero {
+  color: var(--cor-texto-suave);
+  font-weight: 700;
+}
+
+@media (max-width: 576px) {
+  .ranking-podio  { flex-direction: column; align-items: center; }
+  .posicao-1      { transform: scale(1); order: -1; }
+}
