@@ -1,0 +1,17 @@
+.footer-bet {
+  background-color: var(--cor-nav);
+  border-top: 1px solid var(--cor-borda);
+  padding: 10px 0;
+}
+
+.footer-aviso {
+  font-size: 0.72rem;
+  color: var(--cor-primaria);
+  margin-bottom: 2px;
+}
+
+.footer-creditos {
+  font-size: 0.68rem;
+  color: #374151;
+  margin: 0;
+}
