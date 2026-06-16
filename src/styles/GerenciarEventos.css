@@ -1,0 +1,28 @@
+.form-evento .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.form-evento .form-row.tres-colunas {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.filtro-esporte select {
+  background-color: var(--cor-fundo-3);
+  border: 1px solid var(--cor-borda);
+  border-radius: 4px;
+  color: var(--cor-texto);
+  padding: 4px 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .form-evento .form-row,
+  .form-evento .form-row.tres-colunas {
+    grid-template-columns: 1fr;
+  }
+}
