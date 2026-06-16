@@ -1,0 +1,195 @@
+/* ── Métricas ─────────────────────────────────────── */
+.metricas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.metrica-card {
+  background-color: var(--cor-fundo-2);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--border-radius);
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: border-color 0.15s;
+  border-left: 3px solid transparent;
+}
+
+.metrica-card:hover {
+  border-left-color: var(--cor-primaria);
+}
+
+.metrica-icone {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+}
+
+.metrica-icone.verde   { background-color: rgba(45,212,160,0.12); color: #2dd4a0; }
+.metrica-icone.vermelho{ background-color: rgba(239,68,68,0.12);  color: #ef4444; }
+.metrica-icone.azul    { background-color: rgba(59,130,246,0.12); color: #3b82f6; }
+.metrica-icone.amarelo { background-color: rgba(245,158,11,0.12); color: #f59e0b; }
+.metrica-icone.roxo    { background-color: rgba(168,85,247,0.12); color: #a855f7; }
+.metrica-icone.laranja { background-color: rgba(242,106,27,0.12); color: #f26a1b; }
+
+.metrica-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.metrica-valor {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: var(--cor-texto);
+  line-height: 1.1;
+}
+
+.metrica-label {
+  font-size: 0.7rem;
+  color: var(--cor-texto-suave);
+  margin-top: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ── Saldo destaque ──────────────────────────────── */
+.saldo-destaque {
+  background-color: var(--cor-fundo-2);
+  border: 1px solid var(--cor-borda);
+  border-left: 4px solid var(--cor-primaria);
+  border-radius: var(--border-radius);
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.saldo-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.saldo-label {
+  font-size: 0.7rem;
+  color: var(--cor-texto-suave);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.saldo-valor {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--cor-primaria);
+  line-height: 1.1;
+}
+
+.btn-apostar-now {
+  background-color: var(--cor-primaria);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: var(--border-radius);
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: background-color 0.15s;
+}
+
+.btn-apostar-now:hover {
+  background-color: var(--cor-primaria-hover);
+  color: #fff;
+}
+
+/* ── Resumo financeiro ──────────────────────────── */
+.resumo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 8px;
+}
+
+.resumo-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 12px;
+  background-color: var(--cor-nav);
+  border-radius: 4px;
+  border: 1px solid var(--cor-borda);
+}
+
+.resumo-label {
+  font-size: 0.68rem;
+  color: var(--cor-texto-suave);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.resumo-valor {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.resumo-valor.positivo { color: var(--cor-verde); }
+.resumo-valor.negativo { color: var(--cor-vermelho); }
+
+/* ── Ações rápidas ──────────────────────────────── */
+.acoes-rapidas h3 {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--cor-texto-suave);
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--cor-primaria);
+}
+
+.acoes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 8px;
+}
+
+.acao-card {
+  background-color: var(--cor-fundo-2);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--border-radius);
+  padding: 12px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: var(--cor-texto-suave);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  transition: all 0.12s;
+  border-top: 2px solid transparent;
+}
+
+.acao-card:hover {
+  border-top-color: var(--cor-primaria);
+  color: var(--cor-primaria);
+  background-color: rgba(242, 106, 27, 0.06);
+}
+
+@media (max-width: 576px) {
+  .metricas-grid { grid-template-columns: 1fr 1fr; }
+  .saldo-valor   { font-size: 1.4rem; }
+}
