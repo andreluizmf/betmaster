@@ -1,0 +1,178 @@
+/* ── Linha de evento ─────────────────────────────────── */
+.ev-linha {
+  display: flex;
+  align-items: stretch;
+  background-color: var(--cor-fundo-2);
+  border-bottom: 1px solid var(--cor-borda);
+  min-height: 56px;
+  transition: background-color 0.1s;
+}
+
+.ev-linha:hover {
+  background-color: rgba(242, 106, 27, 0.04);
+}
+
+/* ── Coluna meta (data + status) ─────────────────────── */
+.ev-col-meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  padding: 8px 10px;
+  min-width: 100px;
+  max-width: 100px;
+  border-right: 1px solid var(--cor-borda);
+  flex-shrink: 0;
+}
+
+.ev-data {
+  font-size: 0.72rem;
+  color: var(--cor-texto-suave);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Tags de status */
+.ev-tag {
+  font-size: 0.58rem;
+  font-weight: 800;
+  padding: 2px 5px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  width: fit-content;
+}
+
+.ev-tag.aberto     { background: rgba(45,212,160,0.15); color: #2dd4a0; }
+.ev-tag.encerrado  { background: rgba(239,68,68,0.15);  color: #ef4444; }
+.ev-tag.aguardando { background: rgba(245,158,11,0.15); color: #f59e0b; }
+
+/* ── Coluna times ────────────────────────────────────── */
+.ev-col-times {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  padding: 8px 12px;
+  min-width: 0;
+}
+
+.ev-time {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ev-time-nome {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--cor-texto);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ev-resultado {
+  font-size: 0.7rem;
+  color: #2dd4a0;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+/* ── Coluna odds ─────────────────────────────────────── */
+.ev-col-odds {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 8px 10px;
+  flex-shrink: 0;
+}
+
+.ev-odd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-fundo-3);
+  border: 1px solid var(--cor-borda);
+  border-radius: 4px;
+  padding: 5px 0;
+  width: 52px;
+  cursor: pointer;
+  transition: all 0.12s;
+  gap: 1px;
+}
+
+.ev-odd:hover:not(.desativado) {
+  background-color: rgba(45, 212, 160, 0.15);
+  border-color: #2dd4a0;
+}
+
+.ev-odd.desativado {
+  cursor: default;
+  opacity: 0.4;
+}
+
+.ev-odd-label {
+  font-size: 0.6rem;
+  color: var(--cor-texto-suave);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.ev-odd-val {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #2dd4a0;
+  line-height: 1.2;
+}
+
+.ev-odd.desativado .ev-odd-val {
+  color: var(--cor-texto-suave);
+}
+
+/* ── Ações admin ─────────────────────────────────────── */
+.ev-col-acoes {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  flex-shrink: 0;
+}
+
+.ev-btn-acao {
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  transition: all 0.12s;
+  white-space: nowrap;
+}
+
+.ev-btn-acao.encerrar {
+  background-color: rgba(245,158,11,0.12);
+  color: #f59e0b;
+  border: 1px solid rgba(245,158,11,0.25);
+}
+.ev-btn-acao.encerrar:hover { background-color: rgba(245,158,11,0.25); }
+
+.ev-btn-acao.deletar {
+  background-color: rgba(239,68,68,0.12);
+  color: #ef4444;
+  border: 1px solid rgba(239,68,68,0.25);
+}
+.ev-btn-acao.deletar:hover { background-color: rgba(239,68,68,0.25); }
+
+/* ── Responsivo ──────────────────────────────────────── */
+@media (max-width: 560px) {
+  .ev-col-meta { min-width: 76px; max-width: 76px; padding: 6px 7px; }
+  .ev-odd      { width: 44px; }
+  .ev-odd-val  { font-size: 0.8rem; }
+  .ev-data     { font-size: 0.65rem; }
+}
