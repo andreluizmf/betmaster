@@ -1,0 +1,92 @@
+.resultado-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.resultado-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  border-top: 3px solid var(--cor-primaria);
+}
+
+.resultado-evento-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.resultado-esporte {
+  background-color: rgba(59,130,246,0.12);
+  color: #3b82f6;
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 3px;
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.resultado-evento-info h3 {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.resultado-data {
+  font-size: 0.75rem;
+  color: var(--cor-texto-suave);
+}
+
+.resultado-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 260px;
+}
+
+.resultado-form label {
+  font-size: 0.72rem;
+  color: var(--cor-texto-suave);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.resultado-opcoes {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.btn-resultado-opcao {
+  background-color: var(--cor-fundo-3);
+  color: var(--cor-texto-suave);
+  border: 1px solid var(--cor-borda);
+  border-radius: 4px;
+  padding: 7px 14px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.12s;
+}
+
+.btn-resultado-opcao:hover {
+  border-color: var(--cor-primaria);
+  color: var(--cor-primaria);
+}
+
+.btn-resultado-opcao.selecionado {
+  background-color: rgba(242,106,27,0.12);
+  border-color: var(--cor-primaria);
+  border-width: 2px;
+  color: var(--cor-primaria);
+}
+
+@media (max-width: 768px) {
+  .resultado-card     { flex-direction: column; align-items: flex-start; }
+  .resultado-form     { min-width: 100%; }
+}
