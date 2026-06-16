@@ -1,0 +1,121 @@
+.aposta-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 12px;
+  align-items: start;
+}
+
+/* Card do evento na tela de aposta */
+.aposta-evento {
+  text-align: center;
+  border-top: 3px solid var(--cor-primaria);
+}
+
+.aposta-times {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 14px 0;
+}
+
+.time-nome-grande {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--cor-texto);
+}
+
+.aposta-data {
+  color: var(--cor-texto-suave);
+  font-size: 0.78rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+/* Palpites */
+.palpite-opcoes {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.btn-palpite {
+  flex: 1;
+  min-width: 80px;
+  background-color: var(--cor-nav);
+  border: 1px solid var(--cor-borda);
+  border-radius: 4px;
+  padding: 10px 6px;
+  cursor: pointer;
+  transition: all 0.12s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.btn-palpite:hover {
+  border-color: var(--cor-odd);
+  background-color: rgba(45,212,160,0.06);
+}
+
+.btn-palpite.selecionado {
+  background-color: rgba(45,212,160,0.1);
+  border-color: var(--cor-odd);
+  border-width: 2px;
+}
+
+.palpite-nome {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--cor-texto);
+}
+
+.palpite-odd {
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--cor-odd);
+}
+
+/* Saldo */
+.saldo-disponivel {
+  font-size: 0.72rem;
+  color: var(--cor-texto-suave);
+  margin-top: 4px;
+}
+
+/* Preview de retorno */
+.retorno-preview {
+  background-color: rgba(45,212,160,0.08);
+  border: 1px solid rgba(45,212,160,0.2);
+  border-radius: 4px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.retorno-preview span {
+  font-size: 0.8rem;
+  color: var(--cor-texto-suave);
+}
+
+.retorno-preview strong {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: var(--cor-verde);
+}
+
+.odd-info {
+  font-size: 0.72rem;
+  color: var(--cor-texto-suave);
+}
+
+@media (max-width: 768px) {
+  .aposta-layout { grid-template-columns: 1fr; }
+}
