@@ -1,0 +1,260 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Administrador",
+      "email": "admin@bet.com",
+      "senha": "123",
+      "perfil": "admin",
+      "saldo": 0
+    },
+    {
+      "id": "2",
+      "nome": "João Jogador",
+      "email": "joao@bet.com",
+      "senha": "123",
+      "perfil": "usuario",
+      "saldo": 1050
+    },
+    {
+      "id": "3",
+      "nome": "Maria Apostadora",
+      "email": "maria@bet.com",
+      "senha": "123",
+      "perfil": "usuario",
+      "saldo": 700
+    }
+  ],
+  "eventos": [
+    {
+      "id": "1",
+      "timeA": "Brasil",
+      "timeB": "Argentina",
+      "esporte": "Futebol",
+      "data": "2026-06-20",
+      "status": "aberto",
+      "resultado": "",
+      "oddA": 1.8,
+      "oddB": 2.1,
+      "oddEmpate": 3.2
+    },
+    {
+      "id": "2",
+      "timeA": "France",
+      "timeB": "Espanha",
+      "esporte": "Futebol",
+      "data": "2026-06-21",
+      "status": "aberto",
+      "resultado": "",
+      "oddA": 2,
+      "oddB": 1.9,
+      "oddEmpate": 3.4
+    },
+    {
+      "id": "3",
+      "timeA": "Lakers",
+      "timeB": "Bulls",
+      "esporte": "Basquete",
+      "data": "2026-06-22",
+      "status": "aberto",
+      "resultado": "",
+      "oddA": 1.6,
+      "oddB": 2.4,
+      "oddEmpate": 0
+    },
+    {
+      "id": "4",
+      "timeA": "Federer",
+      "timeB": "Nadal",
+      "esporte": "Tennis",
+      "data": "2026-06-18",
+      "status": "encerrado",
+      "resultado": "Federer",
+      "oddA": 2,
+      "oddB": 1.8,
+      "oddEmpate": 0
+    },
+    {
+      "id": "5",
+      "timeA": "Djokovic",
+      "timeB": "Alcaraz",
+      "esporte": "Tennis",
+      "data": "2026-06-23",
+      "status": "aberto",
+      "resultado": "",
+      "oddA": 1.75,
+      "oddB": 2.1,
+      "oddEmpate": 0
+    },
+    {
+      "id": "6",
+      "timeA": "Brasil",
+      "timeB": "Polonia",
+      "esporte": "Volei",
+      "data": "2026-06-24",
+      "status": "aberto",
+      "resultado": "",
+      "oddA": 1.55,
+      "oddB": 2.5,
+      "oddEmpate": 0
+    },
+    {
+      "id": "7",
+      "timeA": "Kansas City",
+      "timeB": "San Francisco",
+      "esporte": "Futebol Americano",
+      "data": "2026-06-25",
+      "status": "aberto",
+      "resultado": "",
+      "oddA": 1.9,
+      "oddB": 2,
+      "oddEmpate": 0
+    },
+    {
+      "id": "8",
+      "timeA": "Jones",
+      "timeB": "Ngannou",
+      "esporte": "MMA",
+      "data": "2026-06-26",
+      "status": "aberto",
+      "resultado": "",
+      "oddA": 1.7,
+      "oddB": 2.2,
+      "oddEmpate": 0
+    },
+    {
+      "id": "9",
+      "timeA": "Phelps",
+      "timeB": "Dressel",
+      "esporte": "Natacao",
+      "data": "2026-06-27",
+      "status": "aberto",
+      "resultado": "",
+      "oddA": 1.65,
+      "oddB": 2.3,
+      "oddEmpate": 0
+    },
+    {
+      "id": "10",
+      "timeA": "Verstappen",
+      "timeB": "Hamilton",
+      "esporte": "Formula 1",
+      "data": "2026-06-28",
+      "status": "aberto",
+      "resultado": "",
+      "oddA": 1.85,
+      "oddB": 2.05,
+      "oddEmpate": 0
+    },
+    {
+      "id": "11",
+      "timeA": "Pogacar",
+      "timeB": "Vingegaard",
+      "esporte": "Ciclismo",
+      "data": "2026-06-29",
+      "status": "aberto",
+      "resultado": "",
+      "oddA": 1.95,
+      "oddB": 1.95,
+      "oddEmpate": 0
+    },
+    {
+      "id": "12",
+      "timeA": "Yankees",
+      "timeB": "Red Sox",
+      "esporte": "Beisebol",
+      "data": "2026-06-30",
+      "status": "aberto",
+      "resultado": "",
+      "oddA": 1.8,
+      "oddB": 2.1,
+      "oddEmpate": 0
+    }
+  ],
+  "apostas": [
+    {
+      "id": "1",
+      "usuarioId": "2",
+      "eventoId": "4",
+      "palpite": "Federer",
+      "valor": 100,
+      "odd": 2,
+      "status": "vencida",
+      "retorno": 200,
+      "data": "2026-06-17"
+    },
+    {
+      "id": "2",
+      "usuarioId": "3",
+      "eventoId": "4",
+      "palpite": "Nadal",
+      "valor": 50,
+      "odd": 1.8,
+      "status": "perdida",
+      "retorno": 0,
+      "data": "2026-06-17"
+    },
+    {
+      "usuarioId": "2",
+      "eventoId": "1",
+      "palpite": "Empate",
+      "valor": 50,
+      "odd": 3.2,
+      "status": "pendente",
+      "retorno": 0,
+      "data": "2026-06-16",
+      "id": "gJJ5TaXEhEM"
+    }
+  ],
+  "extrato": [
+    {
+      "id": "1",
+      "usuarioId": "2",
+      "tipo": "bonus_cadastro",
+      "descricao": "Bonus de boas-vindas",
+      "valor": 1000,
+      "data": "2026-06-01"
+    },
+    {
+      "id": "2",
+      "usuarioId": "2",
+      "tipo": "aposta",
+      "descricao": "Aposta: Federer vs Nadal - Federer",
+      "valor": -100,
+      "data": "2026-06-17"
+    },
+    {
+      "id": "3",
+      "usuarioId": "2",
+      "tipo": "premio",
+      "descricao": "Premio: Federer vs Nadal (vencida)",
+      "valor": 200,
+      "data": "2026-06-17"
+    },
+    {
+      "id": "4",
+      "usuarioId": "3",
+      "tipo": "bonus_cadastro",
+      "descricao": "Bonus de boas-vindas",
+      "valor": 750,
+      "data": "2026-06-01"
+    },
+    {
+      "id": "5",
+      "usuarioId": "3",
+      "tipo": "aposta",
+      "descricao": "Aposta: Federer vs Nadal - Nadal",
+      "valor": -50,
+      "data": "2026-06-17"
+    },
+    {
+      "usuarioId": "2",
+      "tipo": "aposta",
+      "descricao": "Aposta: Brasil vs Argentina — Empate",
+      "valor": -50,
+      "data": "2026-06-16",
+      "id": "5gETuuGgqBQ"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
