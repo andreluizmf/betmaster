@@ -1,0 +1,216 @@
+.navbar-betmaster {
+  background-color: #0d1117;
+  border-bottom: 2px solid #f26a1b;
+  padding: 0;
+  height: 52px;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+/* Wrapper interno */
+.navbar-betmaster .container,
+.navbar-betmaster .container-fluid {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  gap: 0;
+  max-width: 100%;
+}
+
+/* Logo */
+.betmaster-brand {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #f26a1b !important;
+  text-decoration: none !important;
+  font-style: italic;
+  letter-spacing: -0.02em;
+  padding-right: 16px;
+  border-right: 1px solid #1f2937;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  margin-right: 4px;
+}
+
+.badge-admin {
+  background-color: #ef4444;
+  color: #fff;
+  font-size: 0.55rem;
+  padding: 2px 5px;
+  border-radius: 2px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-style: normal;
+  align-self: center;
+}
+
+/* Links da navbar */
+.navbar-betmaster .nav-link {
+  color: #9ca3af !important;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0 12px !important;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: color 0.12s, border-color 0.12s;
+  white-space: nowrap;
+  text-decoration: none !important;
+}
+
+.navbar-betmaster .nav-link:hover {
+  color: #fff !important;
+  border-bottom-color: #f26a1b;
+}
+
+/* Toggler mobile */
+.navbar-toggler {
+  border: 1px solid #374151 !important;
+  padding: 4px 8px !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(0.7);
+  width: 16px;
+  height: 16px;
+}
+
+/* Área direita do usuário */
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.navbar-nome {
+  color: #6b7280;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.navbar-saldo {
+  background-color: rgba(242, 106, 27, 0.12);
+  color: #f26a1b;
+  border: 1px solid rgba(242, 106, 27, 0.25);
+  padding: 4px 10px;
+  border-radius: 3px;
+  font-size: 0.78rem;
+  font-weight: 900;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
+.btn-logout {
+  background-color: transparent;
+  color: #6b7280;
+  border: 1px solid #1f2937;
+  border-radius: 3px;
+  padding: 4px 10px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  transition: all 0.12s;
+  white-space: nowrap;
+}
+
+.btn-logout:hover {
+  color: #ef4444;
+  border-color: rgba(239,68,68,0.4);
+  background-color: rgba(239,68,68,0.08);
+}
+
+/* ── Mobile ── */
+@media (max-width: 991px) {
+  .navbar-betmaster .navbar-collapse {
+    background-color: #0d1117;
+    border-top: 1px solid #1f2937;
+    position: absolute;
+    top: 52px;
+    left: 0;
+    right: 0;
+    z-index: 199;
+    padding: 6px 10px 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+  }
+
+  .navbar-betmaster .nav-link {
+    height: auto;
+    border-bottom: none;
+    border-left: 2px solid transparent;
+    padding: 9px 12px !important;
+    margin-bottom: 0;
+  }
+
+  .navbar-betmaster .nav-link:hover {
+    border-bottom: none;
+    border-left-color: #f26a1b;
+    background-color: rgba(242,106,27,0.06);
+  }
+
+  .navbar-user {
+    flex-wrap: wrap;
+    margin-left: 0;
+    padding-top: 8px;
+    border-top: 1px solid #1f2937;
+    gap: 6px;
+  }
+}
+
+/* ── Overrides modo light ── */
+body[data-tema='light'] .navbar-betmaster {
+  background-color: #ffffff;
+  border-bottom-color: #f26a1b;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+body[data-tema='light'] .navbar-betmaster .container,
+body[data-tema='light'] .navbar-betmaster .container-fluid {
+  background-color: #ffffff;
+}
+
+body[data-tema='light'] .betmaster-brand {
+  border-right-color: #e2e8f0;
+}
+
+body[data-tema='light'] .navbar-betmaster .nav-link {
+  color: #374151 !important;
+}
+
+body[data-tema='light'] .navbar-betmaster .nav-link:hover {
+  color: #f26a1b !important;
+}
+
+body[data-tema='light'] .navbar-nome {
+  color: #6b7280;
+}
+
+body[data-tema='light'] .btn-logout {
+  border-color: #e2e8f0;
+  color: #6b7280;
+}
+
+body[data-tema='light'] .navbar-betmaster .navbar-collapse {
+  background-color: #ffffff;
+  border-top-color: #e2e8f0;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+}
