@@ -1,0 +1,147 @@
+.login-page {
+  min-height: 100vh;
+  background-color: #0d1117;
+  background-image: radial-gradient(ellipse at 60% 0%, rgba(242,106,27,0.08) 0%, transparent 60%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 360px;
+}
+
+.login-logo {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.login-titulo {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #f26a1b;
+  font-style: italic;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-bottom: 2px;
+  line-height: 1;
+}
+
+.login-subtitulo {
+  color: #4b5563;
+  font-size: 0.7rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 28px;
+}
+
+/* Form box */
+.login-form-box {
+  background-color: #111827;
+  border: 1px solid #1f2937;
+  border-top: 2px solid #f26a1b;
+  border-radius: 6px;
+  padding: 24px 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form .form-group {
+  margin-bottom: 14px;
+}
+
+.btn-login {
+  background-color: #f26a1b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 11px;
+  font-size: 0.875rem;
+  font-weight: 800;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.12s;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 4px;
+}
+
+.btn-login:hover:not(:disabled) { background-color: #d95e10; }
+.btn-login:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* Dicas */
+.login-dica {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #1f2937;
+}
+
+.login-dica p {
+  color: #4b5563;
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 7px;
+}
+
+.dica-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dica-card {
+  background-color: #f8f8f8;
+  border: 1px solid #1f2937;
+  border-radius: 4px;
+  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: #6b7280;
+  cursor: pointer;
+  transition: border-color 0.1s;
+}
+
+.dica-card:hover { border-color: #f26a1b; color: #d1d5db; }
+
+.dica-perfil {
+  padding: 2px 6px;
+  border-radius: 2px;
+  font-weight: 800;
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  flex-shrink: 0;
+}
+
+.dica-perfil.admin   { background: rgba(239,68,68,0.15);  color: #ef4444; }
+.dica-perfil.usuario { background: rgba(45,212,160,0.15); color: #2dd4a0; }
+
+.login-aviso {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 0.68rem;
+  color: #374151;
+}
+
+/* ── Overrides modo light ── */
+body[data-tema='light'] .login-page {
+  background-color: #f1f5f9;
+  background-image: radial-gradient(ellipse at 60% 0%, rgba(242,106,27,0.06) 0%, transparent 60%);
+}
+
+body[data-tema='light'] .login-form-box {
+  background-color: #ffffff;
+  border-color: #e2e8f0;
+}
